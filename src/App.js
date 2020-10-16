@@ -6,9 +6,8 @@ const App = () => {
 
   useEffect(() => {
     const makeRequest = async () => {
-      const response = await axios.get(
-        'https://jsonplaceholder.typicode.com/users'
-      );
+      let url = 'https://jsonplaceholder.typicode.com/users';
+      const response = await axios.get(url);
       setMonsters(response.data);
     };
 
