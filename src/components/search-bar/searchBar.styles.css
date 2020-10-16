@@ -1,0 +1,8 @@
+.SearchBar {
+  margin: 2em 0;
+}
+
+.SearchBar input {
+  margin: 0 auto;
+  display: block;
+}
