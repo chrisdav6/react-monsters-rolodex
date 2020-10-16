@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import CardList from './components/card-list/CardList';
 import axios from 'axios';
 
 const App = () => {
@@ -16,9 +17,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      {monsters.map((monster, idx) => (
-        <p>{monster.name}</p>
-      ))}
+      <CardList monsters={monsters} />
     </div>
   );
 };
