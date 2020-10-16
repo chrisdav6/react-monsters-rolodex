@@ -1,7 +1,18 @@
 .CardList {
-  width: 85vw;
+  max-width: 85vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .CardList { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .CardList { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  .CardList { grid-template-columns: repeat(4, 1fr); }
 }
