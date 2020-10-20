@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import CardList from './components/card-list/CardList';
-import './components/search-bar/SearchBar';
-import axios from 'axios';
 import SearchBar from './components/search-bar/SearchBar';
+import CardList from './components/card-list/CardList';
+import axios from 'axios';
 
 const App = () => {
   const [monsters, setMonsters] = useState([]);
@@ -32,6 +31,7 @@ const App = () => {
       <SearchBar
         searchField={searchField}
         handleSearchChange={handleSearchChange}
+        placeholder='Search Monsters!'
       />
       <CardList monsters={filteredMonsters} />
     </div>
