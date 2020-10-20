@@ -1,8 +1,11 @@
 .SearchBar {
-  margin: 2em 0;
+  margin: 2em 0 3em 0;
 }
 
 .SearchBar input {
   margin: 0 auto;
   display: block;
+  font-size: 1rem;
+  padding: 1em;
+  outline: none;
 }
